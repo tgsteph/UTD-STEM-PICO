@@ -25,6 +25,6 @@ right_button.irq(trigger=machine.Pin.IRQ_RISING, handler=button_handler)
 while fastest_button is None:
   utime.sleep(1)
 if fastest_button is left_button:
-  print("Left Player wins!")
+  print("Player 1 wins!")
 elif fastest_button is right_button:
-  print("Right Player wins!")
+  print("Player 2 wins!")
